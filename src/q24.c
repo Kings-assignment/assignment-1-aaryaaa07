@@ -2,18 +2,23 @@
 // You can you math header file for this (eg: #include <math.h>)
 #include <stdio.h>
 #include <math.h>
-int main(){
+
+int main() {
     int num;
+    int root;
     int result;
 
-    printf("enter a number:");
-    scanf("%d",&num);
+    printf("Enter a number: ");
+    scanf("%d", &num);
 
-    result = (sqrt(num)*sqrt(num)==num);
+    if (num < 0) {
+        result = 0; 
+    } else {
+        root = (int)sqrt(num);        
+        result = (root * root == num); 
+    }
 
-
-    printf("the result is %d\n",result);
+    printf("The result is %d\n", result); 
 
     return 0;
-
 }

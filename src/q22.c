@@ -4,11 +4,13 @@
 #include <math.h>
 
 int main() {
-    int x,y;
-    int sum;
-    printf("enter two numbers:");
-    scanf("%d %d",&x,&y);
-    sum=round(sqrt(x)+sqrt(y));
-    printf("the sum is %d\n",sum);
+    int x, y;
+    int result;
+    printf("Enter two numbers: ");
+    scanf("%d %d", &x, &y);
+
+    result = round(sqrt(x + y));  // Square root of sum, rounded
+    printf("The result is %d\n", result);
+
     return 0;
 }

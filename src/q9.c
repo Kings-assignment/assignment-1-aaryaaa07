@@ -5,14 +5,13 @@
 #include <stdio.h>
 
 int main() {
-    int days, weeks, remaining_days;
+    int number;
+    int week,remaining_days;
 
-    scanf("%d", &days);
-
-    weeks = days / 7;
-    remaining_days = days % 7;
-
-    printf("%d week and %d days\n", weeks, remaining_days);
-
+    printf("Enter a number:");
+    scanf("%d",&number);
+    week=number/7;
+    remaining_days=number%7;
+    printf("%d week %d days",week,remaining_days);
     return 0;
 }

@@ -3,14 +3,18 @@
 #include <stdio.h>
 #include <math.h>
 
-int main() {
-    int x, y;
-    int result;
-    printf("Enter two numbers: ");
+int main (){
+
+    int x,y;
+    int sum;
+    printf(" Enter two numbers:");
     scanf("%d %d", &x, &y);
 
-    result = round(sqrt(x + y));  // Square root of sum, rounded
-    printf("The result is %d\n", result);
+    sum= round(sqrt(x)+sqrt(y));
+
+    printf("The sum is %d\n", sum);
 
     return 0;
+
 }
+
